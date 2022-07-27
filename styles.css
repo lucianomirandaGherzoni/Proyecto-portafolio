@@ -1,47 +1,26 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Anek Latin', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    color: black;
 }
 
 /*header*/
+.bg-light {
+    background-color: #2B2E4A !important;
+}
+
+.navbar-collapse {
+    flex-grow: initial;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #E84545;
+}
+
 .encabezado {
-    background-color: #2B2E4A;
-    text-align: center;
     position: sticky;
     top: 0;
-}
-
-.encabezado nav ul li a {
-    color: #E84545;
-    list-style: none;
-    text-decoration: none;
-    font-weight: 700;
-    font-size: medium;
-    text-align: center;
-}
-
-.logo {
-    width: 10vh;
-    height: 5vh;
-}
-
-.encabezado__menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: nowrap;
-
-}
-
-.encabezado nav ul li a:hover {
-    background-color: #2B2E4A;
-    opacity: 50%;
-}
-
-.encabezado__menu__item {
-    display: inline-block;
-    margin: 20px;
 }
 
 /*body index*/
@@ -53,12 +32,22 @@
     text-align: center;
 }
 
-.atajoynombre {
-    display: inline-block;
+.flexindex {
+    display: flex;
+    justify-content: center;
+
 }
 
-.minombre {
-    font-size: 40px;
+.atajoynombre {
+    margin: auto;
+}
+
+.minombre h1 {
+    font-size: 60px;
+}
+
+.minombre h6 {
+    font-size: 20px;
 }
 
 .mifoto img {
@@ -80,22 +69,16 @@
     opacity: 30%;
 }
 
-/*bodyaboutme*/
-.aboutmeimg {
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center
+/*aboutme*/
+.carousel-item img {
+    height: 50vh;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-.aboutmeimg__item {
-    margin: 10px;
-    padding: 10px;
-}
-
-.aboutmeimg__item img {
-    height: 400px;
-    width: 300px;
+.w-100 {
+    width: 70% !important;
 }
 
 .miinfo {
@@ -126,7 +109,8 @@
 
 h3 {
     margin: 10px;
-    color: #E84545;
+    color: black;
+    opacity: 70%;
 }
 
 .projectos {
@@ -143,7 +127,8 @@ h3 {
 .projectos div img {
     margin: 10px;
     height: 300px;
-    width: 100%;
+    width: 80%;
+    margin-top: 30px;
 }
 
 /*contactos*/
@@ -151,11 +136,20 @@ h3 {
     margin: 30px;
 }
 
+.titulocolor {
+    color: #E84545;
+    font-size: 30px;
+}
+
 /*study*/
 .instituciones a {
     margin: 20px;
     font-size: large;
     color: #E84545;
+}
+
+.instituciones ol {
+    list-style: none;
 }
 
 .img_study img {
@@ -184,29 +178,18 @@ h3 {
 
 }
 
-.RedesSociales a {
-    list-style: none;
+.RedesSociales {
+    display: flex;
+    padding: 20px;
+    justify-content: space-around;
+}
+
+.bi {
     color: #E84545;
-    text-decoration: none;
-    font-size: 15px;
-    font-weight: 500;
-
-}
-
-.pie__RedesSociales__item {
-    display: inline-block;
-    margin: 20px;
-}
-
-.pie ul li a:hover {
-    background-color: #2B2E4A;
-    opacity: 30%;
-
 }
 
 .copyright {
     font-size: smaller;
-    margin: 5px;
     padding-bottom: 10px;
     opacity: 30%;
 
@@ -219,21 +202,26 @@ h3 {
 h2 {
     margin-bottom: 20px;
 }
-.projectos div img {
-    
-    margin-top: 30px;
-}
 
 /*tablet*/
 @media screen and (max-width: 768px) {
+    .nav-link {
+        font-size: 10px;
+    }
 
-    /*aboutme*/
-    .aboutmeimg {
+    .minombre h1 {
+        font-size: 40px;
+    }
+
+    .flexindex {
         display: flex;
         flex-direction: column;
-        text-align: center;
-        align-items: center;
-        justify-content: center
+        justify-content: center;
+    }
+
+    /*aboutme*/
+    .w-100 {
+        width: 100% !important;
     }
 
     /*projectos*/
@@ -243,7 +231,6 @@ h2 {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr)
     }
- 
 
     /*contactos*/
     .mi_iframe iframe {
@@ -262,29 +249,30 @@ h2 {
 /*mobile*/
 @media screen and (max-width: 480px) {
 
-    /*encabezado*/
-    .encabezado nav ul li a {
+    .nav-link {
         font-size: 10px;
     }
 
-    .encabezado__menu__item {
-        margin: 10px;
-    }
-
-    .encabezado nav ul li a:hover {
-        background-color: #2B2E4A;
-        opacity: 50%;
-    }
-
     /*index*/
-    .minombre {
+    .flexindex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .minombre h1 {
+        font-size: 40px;
+    }
+
+    .minombre h6 {
         font-size: 16px;
+        margin-bottom: 15px;
     }
 
     .mifoto img {
-        width: 200px;
+        width: 250px;
         height: 300px;
-        margin: 10px;
+        margin: 20px;
     }
 
     /*projectos*/
@@ -318,19 +306,17 @@ h2 {
         margin-bottom: 10px;
     }
 
+    .formulario form {
+        margin-bottom: 20px;
+        margin-top: 15px;
+    }
+
     /*study*/
     .instituciones a {
         font-size: small;
 
     }
 
-
-
-    .contenidostudy img {
-        height: 200px;
-        width: 200px;
-        margin: 10px;
-    }
 
     /*footer*/
     .RedesSociales a {
@@ -343,7 +329,6 @@ h2 {
     .img_study img {
         height: 200px;
         width: 300px;
-
     }
 
     .pie__RedesSociales__item {
