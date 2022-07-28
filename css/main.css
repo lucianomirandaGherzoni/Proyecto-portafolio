@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  color: #2B2E4A; }
+
+body {
+  background-image: url(./imagenes/fondo/pexels-karolina-grabowska-4709465.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  position: relative;
+  padding-bottom: 10em;
+  min-height: 100vh; }
+
+.encabezado {
+  position: sticky;
+  top: 0;
+  z-index: 2; }
+  .encabezado .navbar-collapse {
+    flex-grow: initial; }
+    .encabezado .navbar-collapse .bg-light {
+      background-color: #2B2E4A !important; }
+    .encabezado .navbar-collapse .navbar-light .navbar-nav .nav-link {
+      color: #E84545; }
+
+.pie {
+  background-color: #2B2E4A;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%; }
+  .pie .RedesSociales {
+    display: flex;
+    padding: 20px;
+    justify-content: space-around; }
+    .pie .RedesSociales .bi {
+      color: #E84545; }
+  .pie .copyright {
+    font-size: 10px;
+    padding-bottom: 10px;
+    opacity: 30%;
+    color: #E84545;
+    margin-bottom: 10px; }
+
+/*body index*/
+/*body projects*/
+/*body aboutme*/
+/*body study*/
+/*body contact*/
