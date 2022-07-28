@@ -2,10 +2,21 @@
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
-    color: black;
+    color: #2B2E4A;
 }
 
 /*header*/
+body {
+    background-image: url(./imagenes/fondo/pexels-karolina-grabowska-4709465.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+    padding-bottom: 10em;
+    min-height: 100vh;
+}
+
 .bg-light {
     background-color: #2B2E4A !important;
 }
@@ -24,16 +35,6 @@
     z-index: 2;
 }
 
-body {
-    background-image: url(./imagenes/fondo/fondo1.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    text-align: center;
-    position: relative;
-    padding-bottom: 10em;
-    min-height: 100vh;
-}
 
 /*body index*/
 
@@ -51,15 +52,28 @@ body {
 
 }
 
+.minombre p {
+    font-size: 16px;
+    font-weight: 700;
+    font-style: oblique;
+    font-stretch: expanded;
+}
+
 .atajoynombre {
     margin: 30px;
-    margin-top: 30vh;
-    margin-left: 20vh;
-    
+    margin-top: 25vh;
+    margin-left: 0vh;
+
 }
 
 .minombre h1 {
     font-size: 60px;
+
+}
+
+.mir {
+    font-size: 60px;
+    color: #E84545;
 }
 
 .minombre h6 {
@@ -70,7 +84,7 @@ body {
     width: 33vh;
     height: 45vh;
     margin: 30px;
-    margin-left: 35vh;
+    margin-left: 0vh;
 }
 
 h2 {
@@ -115,13 +129,10 @@ h2 {
 
 .atajoProjectscontact a {
     color: #E84545;
-    font-weight: 500;
+    font-weight: 700;
     text-decoration: none;
     margin: 10px;
     font-size: 15px;
-    text-align: center;
-    margin: 10px;
-
 }
 
 .atajoProjectscontact a:hover {
@@ -134,8 +145,10 @@ h2 {
 
 h3 {
     margin: 10px;
-    color: black;
-    opacity: 70%;
+}
+
+p {
+    font-weight: 700;
 }
 
 .projectos {
@@ -161,27 +174,30 @@ h3 {
     margin: 30px;
 }
 
-.titulocolor span{
+.titulocolor span {
     color: #2B2E4A;
     font-size: 0;
     line-height: 1.5;
-    
+
 }
-.titulocolor span{
+
+.titulocolor span {
 
     font-size: 2rem;
     animation: move 2s ease-in-out infinite;
 }
 
 @keyframes move {
-    0%{
-        transform: translate(-80%,0);
+    0% {
+        transform: translate(-100%, 0);
     }
-    50%{
+
+    50% {
         text-shadow: 0 25px 50px #E84545;
     }
-    100%{
-        transform: translate(80%,0);
+
+    100% {
+        transform: translate(100%, 0);
     }
 }
 
@@ -236,9 +252,11 @@ h3 {
 }
 
 .copyright {
-    font-size: smaller;
+    font-size: 10px;
     padding-bottom: 10px;
     opacity: 30%;
+    color: #E84545;
+    margin-bottom: 10px;
 
 }
 
