@@ -17,7 +17,8 @@ body {
     margin: 10px;
     margin-bottom: 20px; }
   body p {
-    font-weight: 700; }
+    font-weight: 700;
+    margin: 20px; }
 
 .encabezado {
   position: sticky;
@@ -34,7 +35,12 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  margin: 30px; }
+  .ruta div .bi {
+    color: #E84545;
+    height: 20px;
+    width: 20px; }
 
 .pie {
   background-color: #2B2E4A;
@@ -64,8 +70,7 @@ body {
     .flexindex .mifoto img {
       width: 33vh;
       height: 45vh;
-      margin: 30px;
-      margin-left: 0vh; }
+      margin: 30px; }
   .flexindex .atajoynombre {
     margin: 30px;
     margin-top: 25vh;
@@ -173,7 +178,10 @@ body {
 @media screen and (max-width: 768px) {
   /* header */
   .nav-link {
-    font-size: 10px; }
+    font-size: 16px; }
+  .navbar-light .navbar-toggler {
+    color: #E84545 !important;
+    opacity: 50%; }
   /* index */
   .flexindex {
     display: flex;
@@ -219,12 +227,12 @@ body {
       margin: 20px;
       margin-top: 20px;
       margin-bottom: 10px; }
+    .flexindex .atajoynombre .minombre h1 {
+      font-size: 35px; }
+      .flexindex .atajoynombre .minombre h1 .mir {
+        font-size: 60px; }
     .flexindex .atajoynombre .minombre p {
       font-size: 16px; }
-    .flexindex .atajoynombre .minombre .mir {
-      font-size: 30px; }
-    .flexindex .atajoynombre .minombre h1 {
-      font-size: 30px; }
   /*projectos*/
   .projectos {
     display: flex;
@@ -233,11 +241,15 @@ body {
     align-items: center; }
     .projectos div img {
       height: 300px;
-      width: 300px;
-      margin-top: 30px; }
+      width: 100% !important;
+      margin-top: 30px;
+      margin-left: 0 !important; }
+  /*aboutme*/
+  .carousel-item .w-100 {
+    width: 100% !important; }
   /*contactos*/
   .mi_iframe iframe {
-    width: 300px;
+    width: 100%;
     height: 200px;
     margin-bottom: 10px; }
   .formulario form {
@@ -248,7 +260,9 @@ body {
     font-size: 16px; }
   .img_study img {
     height: 200px;
-    width: 300px; }
+    width: 100%, !important;
+    margin-left: 0;
+    padding: 0; }
   /*footer*/
   .RedesSociales a {
     list-style: none;

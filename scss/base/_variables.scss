@@ -1,5 +1,10 @@
-$colorprincipal: #2B2E4A;
-$colorsecundario: #E84545;
-$letratitulo:  60px;
-$letrasubtitulo: 30px;
-$letradefault: 16px;
+$letras: (
+    "letra-titulo": 60px,
+    "letra-subtitulo": 35px,
+    "letra-default": 16px,
+);
+$colores: (
+    "color-principal": #2B2E4A,
+    "color-secundario": #E84545,
+);
+$pantalla-completa: 100%;

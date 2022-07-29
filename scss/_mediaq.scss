@@ -4,9 +4,15 @@
 
     /* header */
     .nav-link {
-        font-size: 10px;
+        font-size: map-get($letras, "letra-default");
+    }
+    .navbar-light {
+    .navbar-toggler {
+        color:map-get($colores, "color-secundario")!important; 
+        opacity: 50%;
     }
 
+    }
     /* index */
     .flexindex {
         display: flex;
@@ -27,7 +33,7 @@
 
             .minombre {
                 p {
-                    font-size: $letradefault;
+                    font-size: map-get($letras, "letra-default");
                 }
             }
         }
@@ -39,7 +45,7 @@
 
     /*aboutme*/
     .w-100 {
-        width: 100% !important;
+        width: $pantalla-completa  !important;
     }
 
     /*projectos*/
@@ -91,17 +97,18 @@
         .atajoynombre {
 
             .minombre {
-                p {
-                    font-size: $letradefault;
-                }
-
-                .mir {
-                    font-size: $letrasubtitulo;
-                }
-
                 h1 {
-                    font-size: $letrasubtitulo;
+                    font-size: map-get($letras, "letra-subtitulo");
+
+                    .mir {
+                        font-size: map-get($letras, "letra-titulo");
+                    }
                 }
+
+                p {
+                    font-size: map-get($letras, "letra-default");
+                }
+
             }
         }
     }
@@ -116,18 +123,24 @@
         div {
             img {
                 height: 300px;
-                width: 300px;
+                width: $pantalla-completa  !important;
                 margin-top: 30px;
+                margin-left: 0 !important;
             }
         }
     }
 
-
+    /*aboutme*/
+    .carousel-item {
+        .w-100 {
+            width: $pantalla-completa  !important;
+        }
+    }
 
     /*contactos*/
     .mi_iframe {
         iframe {
-            width: 300px;
+            width: $pantalla-completa;
             height: 200px;
             margin-bottom: 10px;
         }
@@ -143,16 +156,19 @@
     /*study*/
     .instituciones {
         a {
-            font-size: $letradefault;
+            font-size: map-get($letras, "letra-default");
         }
     }
 
-    .img_study {
+.img_study {
+
         img {
             height: 200px;
-            width: 300px;
+            width: $pantalla-completa,!important;
+            margin-left: 0;
+            padding: 0;
         }
-    }
+    } 
 
     /*footer*/
     .RedesSociales {

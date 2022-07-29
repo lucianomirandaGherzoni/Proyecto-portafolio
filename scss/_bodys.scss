@@ -10,8 +10,6 @@
             width: 33vh;
             height: 45vh;
             margin: 30px;
-            margin-left: 0vh;
-
         }
     }
 
@@ -23,33 +21,33 @@
         .minombre {
             p {
                 /*  */
-                font-size: $letradefault;
+                font-size: map-get($letras, "letra-default");
                 font-weight: 700;
                 font-style: oblique;
                 font-stretch: expanded;
             }
 
             h1 {
-                font-size: $letratitulo;
+                font-size: map-get($letras, "letra-titulo");
             }
 
             .mir {
-                font-size: $letratitulo;
-                color: $colorsecundario;
+                font-size: map-get($letras, "letra-titulo");
+                color: map-get($colores, "color-secundario");
             }
 
         }
 
         .atajoProjectsAbout {
             a {
-                color: $colorsecundario;
+                color: map-get($colores, "color-secundario");
                 font-weight: 700;
                 text-decoration: none;
                 margin: 10px;
-                font-size: $letradefault;
+                font-size: map-get($letras, "letra-default");
 
                 &:hover {
-                    background-color: $colorprincipal;
+                    background-color: map-get($colores, "color-principal");
                     opacity: 30%;
                 }
 
@@ -80,7 +78,7 @@
 /*body aboutme*/
 .miinfo {
     margin: 10px;
-    font-size: $letradefault;
+    font-size: map-get($letras, "letra-default");
 }
 
 .carousel-item {
@@ -99,14 +97,14 @@
 
 .atajoProjectscontact {
     a {
-        color: $colorsecundario;
+        color: map-get($colores, "color-secundario");
         font-weight: 700;
         text-decoration: none;
         margin: 10px;
-        font-size: $letradefault;
+        font-size: map-get($letras, "letra-default");
 
         &:hover {
-            background-color: $colorprincipal;
+            background-color: map-get($colores, "color-principal");
             opacity: 30%;
         }
     }
@@ -115,12 +113,13 @@
 
 /*body study*/
 
-.img_study{
+.img_study {
     padding: 20px;
- img {
-    height: 500px;
-    width: 700px;
-}
+
+    img {
+        height: 500px;
+        width: 700px;
+    }
 }
 
 .instituciones {
@@ -129,24 +128,25 @@
 
         a {
             margin: 20px;
-            font-size: $letradefault;
-            color: $colorsecundario;
+            font-size: map-get($letras, "letra-default");
+            color: map-get($colores, "color-secundario");
         }
     }
 
 }
+
 .mi_iframe {
-    iframe{
-    width: 700px;
-    height: 500px;
-    margin-top: 20px;
-}
+    iframe {
+        width: 700px;
+        height: 500px;
+        margin-top: 20px;
+    }
 }
 
 /*body contact*/
 .titulocolor {
     span {
-        color: $colorprincipal;
+        color: map-get($colores, "color-principal");
         font-size: 0;
         line-height: 1.5;
     }
@@ -165,7 +165,7 @@
     }
 
     50% {
-        text-shadow: 0 25px 50px $colorsecundario;
+        text-shadow: 0 25px 50px map-get($colores, "color-secundario");
     }
 
     100% {
