@@ -174,7 +174,8 @@ p {
         transform: translate(100%, 0);
     }
 }
-.formulario{
+
+.formulario {
     margin: 30px;
 }
 
@@ -193,6 +194,7 @@ p {
     height: 500px;
     width: 700px;
 }
+
 .img_study {
     padding: 20px;
 }
@@ -247,10 +249,11 @@ h2 {
 
 /*tablet*/
 @media screen and (max-width: 768px) {
+    /* header */
     .nav-link {
         font-size: 10px;
     }
-
+/* index */
     .index {
         margin-top: 40px;
     }
@@ -305,23 +308,18 @@ h2 {
 
 /*mobile*/
 @media screen and (max-width: 480px) {
-
+/* header */
     .nav-link {
         font-size: 10px;
     }
 
-    .mifoto {
-        margin-top: 50px;
-        margin-bottom: 10px;
-    }
-
+ 
     /*index*/
     .flexindex {
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
-
     .minombre h1 {
         font-size: 40px;
     }
@@ -335,6 +333,8 @@ h2 {
         width: 250px;
         height: 300px;
         margin: 20px;
+        margin-top: 50px;
+        margin-bottom: 10px;
     }
 
     /*projectos*/
@@ -370,6 +370,10 @@ h2 {
 
     }
 
+    .img_study img {
+        height: 200px;
+        width: 300px;
+    }
 
     /*footer*/
     .RedesSociales a {
@@ -377,11 +381,6 @@ h2 {
         text-decoration: none;
         font-size: 12px;
         font-weight: 500;
-    }
-
-    .img_study img {
-        height: 200px;
-        width: 300px;
     }
 
     .pie__RedesSociales__item {

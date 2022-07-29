@@ -115,13 +115,12 @@
 
 /*body study*/
 
-.img_study {
+.img_study{
     padding: 20px;
-
-    img {
-        height: 500px;
-        width: 700px;
-    }
+ img {
+    height: 500px;
+    width: 700px;
+}
 }
 
 .instituciones {
@@ -135,6 +134,13 @@
         }
     }
 
+}
+.mi_iframe {
+    iframe{
+    width: 700px;
+    height: 500px;
+    margin-top: 20px;
+}
 }
 
 /*body contact*/

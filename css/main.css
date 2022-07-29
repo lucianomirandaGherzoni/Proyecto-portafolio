@@ -5,7 +5,7 @@
   color: #2B2E4A; }
 
 body {
-  background-image: url(./imagenes/fondo/pexels-karolina-grabowska-4709465.jpg);
+  background-image: url(../imagenes/fondo/pexels-karolina-grabowska-4709465.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -25,21 +25,16 @@ body {
   z-index: 2; }
   .encabezado .navbar-collapse {
     flex-grow: initial; }
-    .encabezado .navbar-collapse .bg-light {
-      background-color: #2B2E4A !important; }
-    .encabezado .navbar-collapse .navbar-light .navbar-nav .nav-link {
-      color: #E84545; }
+  .encabezado .bg-light {
+    background-color: #2B2E4A !important; }
+  .encabezado .navbar-light .navbar-nav .nav-link {
+    color: #E84545; }
 
 .ruta {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center; }
-
-.mi_iframe iframe {
-  width: 700px;
-  height: 500px;
-  margin-top: 20px; }
 
 .pie {
   background-color: #2B2E4A;
@@ -146,6 +141,11 @@ body {
     font-size: 16px;
     color: #E84545; }
 
+.mi_iframe iframe {
+  width: 700px;
+  height: 500px;
+  margin-top: 20px; }
+
 /*body contact*/
 .titulocolor span {
   color: #2B2E4A;
@@ -169,5 +169,93 @@ body {
 
 .formulario {
   margin: 30px; }
+
+@media screen and (max-width: 768px) {
+  /* header */
+  .nav-link {
+    font-size: 10px; }
+  /* index */
+  .flexindex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .flexindex .mifoto img {
+      width: 350px;
+      height: 500px;
+      margin-left: auto; }
+    .flexindex .atajoynombre {
+      margin: auto;
+      margin-top: 10px; }
+      .flexindex .atajoynombre .minombre p {
+        font-size: 16px; }
+  .index {
+    margin-top: 40px; }
+  /*aboutme*/
+  .w-100 {
+    width: 100% !important; }
+  /*projectos*/
+  .projectos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr); }
+  /*contactos*/
+  .projectos .img_study img {
+    height: 300px;
+    width: 500px; } }
+
+/*mobile*/
+@media screen and (max-width: 480px) {
+  /* header */
+  .nav-link {
+    font-size: 10px; }
+  /*index*/
+  .flexindex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .flexindex .mifoto img {
+      width: 250px;
+      height: 300px;
+      margin: 20px;
+      margin-top: 20px;
+      margin-bottom: 10px; }
+    .flexindex .atajoynombre .minombre p {
+      font-size: 16px; }
+    .flexindex .atajoynombre .minombre .mir {
+      font-size: 30px; }
+    .flexindex .atajoynombre .minombre h1 {
+      font-size: 30px; }
+  /*projectos*/
+  .projectos {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center; }
+    .projectos div img {
+      height: 300px;
+      width: 300px;
+      margin-top: 30px; }
+  /*contactos*/
+  .mi_iframe iframe {
+    width: 300px;
+    height: 200px;
+    margin-bottom: 10px; }
+  .formulario form {
+    margin-bottom: 20px;
+    margin-top: 15px; }
+  /*study*/
+  .instituciones a {
+    font-size: 16px; }
+  .img_study img {
+    height: 200px;
+    width: 300px; }
+  /*footer*/
+  .RedesSociales a {
+    list-style: none;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 500; }
+  .RedesSociales .pie__RedesSociales__item {
+    margin: 10px; } }
 
 /*APLICANDO SASS*/
