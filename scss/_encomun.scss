@@ -12,8 +12,18 @@ body {
     background-size: cover;
     text-align: center;
     position: relative;
-    padding-bottom: 10em;
+    padding-bottom: 7rem;
     min-height: 100vh;
+
+    h2 {
+        margin: 10px;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-weight: 700;
+    }
+
 }
 
 .encabezado {
@@ -25,7 +35,7 @@ body {
         flex-grow: initial;
 
         .bg-light {
-            background-color: $colorprincipal!important;
+            background-color: $colorprincipal  !important;
         }
 
         .navbar-light .navbar-nav .nav-link {
@@ -33,6 +43,19 @@ body {
         }
     }
 
+}
+
+.ruta {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mi_iframe iframe {
+    width: 700px;
+    height: 500px;
+    margin-top: 20px;
 }
 
 .pie {
@@ -57,7 +80,7 @@ body {
         font-size: 10px;
         padding-bottom: 10px;
         opacity: 30%;
-        color:$colorsecundario;
+        color: $colorsecundario;
         margin-bottom: 10px;
 
     }

@@ -1,5 +1,176 @@
 /*body index*/
+.flexindex {
+    display: flex;
+    justify-content: center;
+
+    .mifoto {
+        margin-top: 30px;
+
+        img {
+            width: 33vh;
+            height: 45vh;
+            margin: 30px;
+            margin-left: 0vh;
+
+        }
+    }
+
+    .atajoynombre {
+        margin: 30px;
+        margin-top: 25vh;
+        margin-left: 0vh;
+
+        .minombre {
+            p {
+                /*  */
+                font-size: $letradefault;
+                font-weight: 700;
+                font-style: oblique;
+                font-stretch: expanded;
+            }
+
+            h1 {
+                font-size: $letratitulo;
+            }
+
+            .mir {
+                font-size: $letratitulo;
+                color: $colorsecundario;
+            }
+
+        }
+
+        .atajoProjectsAbout {
+            a {
+                color: $colorsecundario;
+                font-weight: 700;
+                text-decoration: none;
+                margin: 10px;
+                font-size: $letradefault;
+
+                &:hover {
+                    background-color: $colorprincipal;
+                    opacity: 30%;
+                }
+
+            }
+        }
+
+    }
+}
+
 /*body projects*/
+.projectos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr)
+}
+
+.projectos {
+    .projectos__items {
+        img {
+            margin: 10px;
+            height: 300px;
+            width: 80%;
+            margin-top: 30px;
+        }
+    }
+}
+
 /*body aboutme*/
+.miinfo {
+    margin: 10px;
+    font-size: $letradefault;
+}
+
+.carousel-item {
+    img {
+        height: 50vh;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .w-100 {
+        width: 70% !important;
+    }
+
+}
+
+.atajoProjectscontact {
+    a {
+        color: $colorsecundario;
+        font-weight: 700;
+        text-decoration: none;
+        margin: 10px;
+        font-size: $letradefault;
+
+        &:hover {
+            background-color: $colorprincipal;
+            opacity: 30%;
+        }
+    }
+
+}
+
 /*body study*/
+
+.img_study {
+    padding: 20px;
+
+    img {
+        height: 500px;
+        width: 700px;
+    }
+}
+
+.instituciones {
+    ol {
+        list-style: none;
+
+        a {
+            margin: 20px;
+            font-size: $letradefault;
+            color: $colorsecundario;
+        }
+    }
+
+}
+
 /*body contact*/
+.titulocolor {
+    span {
+        color: $colorprincipal;
+        font-size: 0;
+        line-height: 1.5;
+    }
+}
+
+.titulocolor {
+    span {
+        font-size: 2rem;
+        animation: move 2s ease-in-out infinite;
+    }
+}
+
+@keyframes move {
+    0% {
+        transform: translate(-100%, 0);
+    }
+
+    50% {
+        text-shadow: 0 25px 50px $colorsecundario;
+    }
+
+    100% {
+        transform: translate(100%, 0);
+    }
+}
+
+.introprojects {
+    font-size: 1rem;
+}
+
+.formulario {
+    margin: 30px;
+}
