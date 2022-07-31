@@ -1,61 +1,60 @@
+@import './base/extends';
+
 /*body index*/
 .flexindex {
-    display: flex;
-    justify-content: center;
+    @include flex (row, center, auto);
 
     .mifoto {
-        margin-top: 30px;
-
-        img {
-            width: 33vh;
-            height: 45vh;
-            margin: 30px;
-        }
+        @include margen (30px, 0px, 0px, 0px);
     }
 
-    .atajoynombre {
-        margin: 30px;
-        margin-top: 25vh;
-        margin-left: 0vh;
-
-        .minombre {
-            p {
-                /*  */
-                font-size: map-get($letras, "letra-default");
-                font-weight: 700;
-                font-style: oblique;
-                font-stretch: expanded;
-            }
-
-            h1 {
-                font-size: map-get($letras, "letra-titulo");
-            }
-
-            .mir {
-                font-size: map-get($letras, "letra-titulo");
-                color: map-get($colores, "color-secundario");
-            }
-
-        }
-
-        .atajoProjectsAbout {
-            a {
-                color: map-get($colores, "color-secundario");
-                font-weight: 700;
-                text-decoration: none;
-                margin: 10px;
-                font-size: map-get($letras, "letra-default");
-
-                &:hover {
-                    background-color: map-get($colores, "color-principal");
-                    opacity: 30%;
-                }
-
-            }
-        }
-
+    img {
+        width: 33vh;
+        height: 45vh;
+        @include margen (30px, 20px, 20px, 20px);
     }
 }
+
+.atajoynombre {
+    @include margen (20vh, 0px, 0px,7vh);
+
+    .minombre {
+        p {
+            /*  */
+            font-size: map-get($letras, "letra-default");
+            font-style: oblique;
+            font-stretch: expanded;
+        }
+
+        h1 {
+            font-size: map-get($letras, "letra-titulo");
+        }
+
+        .mir {
+            font-size: map-get($letras, "letra-titulo");
+            color: map-get($colores, "color-secundario");
+        }
+
+    }
+
+    .atajoProjectsAbout {
+        a {
+            color: map-get($colores, "color-secundario");
+            font-weight: 700;
+            text-decoration: none;
+            @include margen (10px, 10px, 10px, 10px);
+            font-size: map-get($letras, "letra-default");
+
+            &:hover {
+                background-color: map-get($colores, "color-principal");
+                opacity: 30%;
+            }
+
+        }
+    }
+
+}
+
 
 /*body projects*/
 .projectos {
@@ -67,26 +66,23 @@
 .projectos {
     .projectos__items {
         img {
-            margin: 10px;
             height: 300px;
             width: 80%;
-            margin-top: 30px;
+            @include margen (30px, 10px, 10px, 10px);
         }
     }
 }
 
 /*body aboutme*/
 .miinfo {
-    margin: 10px;
+    @include margen (10px, 10px, 10px, 10px);
     font-size: map-get($letras, "letra-default");
 }
 
 .carousel-item {
     img {
         height: 50vh;
-        margin: auto;
-        margin-top: 20px;
-        margin-bottom: 20px;
+        @include margen (20px, 20px, auto, auto);
     }
 
     .w-100 {
@@ -100,12 +96,12 @@
         color: map-get($colores, "color-secundario");
         font-weight: 700;
         text-decoration: none;
-        margin: 10px;
+        @include margen (10px, 10px, 10px, 10px);
         font-size: map-get($letras, "letra-default");
 
         &:hover {
             background-color: map-get($colores, "color-principal");
-            opacity: 30%;
+            opacity: 10%;
         }
     }
 
@@ -125,6 +121,8 @@
 .instituciones {
     ol {
         list-style: none;
+        margin: 0;
+        padding: 0;
 
         a {
             margin: 20px;
@@ -139,7 +137,7 @@
     iframe {
         width: 700px;
         height: 500px;
-        margin-top: 20px;
+        @include margen (20px, auto, auto, auto);
     }
 }
 
@@ -154,7 +152,7 @@
 
 .titulocolor {
     span {
-        font-size: 2rem;
+        font-size: map-get($letras, "letra-subtitulo");
         animation: move 2s ease-in-out infinite;
     }
 }
@@ -174,9 +172,13 @@
 }
 
 .introprojects {
-    font-size: 1rem;
+    font-size: map-get($letras, "letra-default")
 }
 
 .formulario {
-    margin: 30px;
+    @include margen (30px, 30px, 30px, 30px);
+
+    label {
+        padding: 10px;
+    }
 }

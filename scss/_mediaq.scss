@@ -1,35 +1,34 @@
 @import './base/variables';
+@import './base/extends';
 
-@media screen and (max-width: 768px) {
+@include mediaq('tablet') {
 
     /* header */
     .nav-link {
         font-size: map-get($letras, "letra-default");
     }
+
     .navbar-light {
-    .navbar-toggler {
-        color:map-get($colores, "color-secundario")!important; 
-        opacity: 50%;
-    }
+        .navbar-toggler {
+            color: map-get($colores, "color-secundario") !important;
+            opacity: 50%;
+        }
 
     }
+
     /* index */
     .flexindex {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        @include flex (column, center, auto);
 
         .mifoto {
             img {
                 width: 350px;
                 height: 500px;
-                margin-left: auto;
             }
         }
 
         .atajoynombre {
-            margin: auto;
-            margin-top: 10px;
+            @include margen (10px, auto, auto, auto);
 
             .minombre {
                 p {
@@ -40,7 +39,7 @@
     }
 
     .index {
-        margin-top: 40px;
+        @include margen (40px, auto, auto, auto);
     }
 
     /*aboutme*/
@@ -70,27 +69,23 @@
 }
 
 /*mobile*/
-@media screen and (max-width: 480px) {
+@include mediaq('mobile') {
 
     /* header */
     .nav-link {
-        font-size: 10px;
+        font-size: map-get($letras, "letra-default");
     }
 
 
     /*index*/
     .flexindex {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        @include flex (column, center, auto);
 
         .mifoto {
             img {
                 width: 250px;
                 height: 300px;
-                margin: 20px;
-                margin-top: 20px;
-                margin-bottom: 10px;
+                @include margen (20px, 10px, auto, auto);
             }
         }
 
@@ -99,14 +94,17 @@
             .minombre {
                 h1 {
                     font-size: map-get($letras, "letra-subtitulo");
+                    margin: 0;
+                }
 
-                    .mir {
-                        font-size: map-get($letras, "letra-titulo");
-                    }
+                .mir {
+                    font-size: map-get($letras, "letra-titulo");
+                    margin: 0;
                 }
 
                 p {
                     font-size: map-get($letras, "letra-default");
+                    margin: 15px;
                 }
 
             }
@@ -115,17 +113,15 @@
 
     /*projectos*/
     .projectos {
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        align-items: center;
+        @include flex (column, center, center);
 
-        div {
+        .projectos__items {
+            width: $pantalla-completa;
+
             img {
-                height: 300px;
-                width: $pantalla-completa  !important;
-                margin-top: 30px;
-                margin-left: 0 !important;
+                height: 200px;
+                width: $pantalla-completa;
+                @include margen (30px, auto, auto, auto);
             }
         }
     }
@@ -142,14 +138,13 @@
         iframe {
             width: $pantalla-completa;
             height: 200px;
-            margin-bottom: 10px;
+            @include margen (30px, auto, auto, auto);
         }
     }
 
     .formulario {
         form {
-            margin-bottom: 20px;
-            margin-top: 15px;
+            @include margen (15px, 20px, auto, auto);
         }
     }
 
@@ -160,23 +155,22 @@
         }
     }
 
-.img_study {
+    .img_study {
+        margin: 0;
+        padding: 0;
 
         img {
             height: 200px;
-            width: $pantalla-completa,!important;
-            margin-left: 0;
-            padding: 0;
+            width: $pantalla-completa  !important;
         }
-    } 
+    }
+
 
     /*footer*/
     .RedesSociales {
         a {
             list-style: none;
             text-decoration: none;
-            font-size: 12px;
-            font-weight: 500;
         }
 
         .pie__RedesSociales__item {
