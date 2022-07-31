@@ -1,5 +1,7 @@
 @import './base/variables';
 @import './base/extends';
+
+/* en comun */
 * {
     margin: 0;
     padding: 0;
@@ -18,7 +20,7 @@ body {
     min-height: 100vh;
 
     h2 {
-        @include margen (10px,20px,10px,10px)
+        @include margen (10px, 20px, 10px, 10px)
     }
 
     p {
@@ -27,6 +29,8 @@ body {
     }
 
 }
+
+/* header */
 
 .encabezado {
     position: sticky;
@@ -48,10 +52,12 @@ body {
 
 }
 
+/* rutas */
 .ruta {
-    @include flex (row,space-between,center);
+    @include flex (row, space-between, center);
     margin: 30px;
     font-size: 25px !important;
+
     div {
         .bi {
             color: map-get($colores, "color-secundario");
@@ -60,6 +66,7 @@ body {
     }
 }
 
+/* footer */
 .pie {
     background-color: map-get($colores, "color-principal");
     text-align: center;
@@ -68,8 +75,9 @@ body {
     width: $pantalla-completa;
 
     .RedesSociales {
-        @include flex (row,space-between,auto);
+        @include flex (row, space-between, auto);
         padding: 20px;
+
         .bi {
             color: map-get($colores, "color-secundario");
         }
@@ -81,7 +89,6 @@ body {
         padding-bottom: 10px;
         opacity: 30%;
         color: map-get($colores, "color-secundario");
-        @include margen (10px,10px,0px,0px)
-
+        @include margen (10px, 10px, 0px, 0px)
     }
 }

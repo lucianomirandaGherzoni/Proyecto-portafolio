@@ -1,6 +1,7 @@
 @import './base/variables';
 @import './base/extends';
 
+/* MEDIA QUERY */
 @include mediaq('tablet') {
 
     /* header */
