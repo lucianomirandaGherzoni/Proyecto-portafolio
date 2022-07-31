@@ -1,11 +1,10 @@
 @import './base/extends';
-
 /*body index*/
 .flexindex {
     @include flex (row, center, auto);
 
     .mifoto {
-        @include margen (30px, 0px, 0px, 0px);
+        @include margen (5vh, 0px, 0px, 0px);
     }
 
     img {
@@ -16,7 +15,7 @@
 }
 
 .atajoynombre {
-    @include margen (20vh, 0px, 0px,7vh);
+    @include margen (25vh, 0px, 0px,7vh);
 
     .minombre {
         p {

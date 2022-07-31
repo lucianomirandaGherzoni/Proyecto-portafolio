@@ -42,6 +42,13 @@ body {
 
     }
 
+    .navbar-brand {
+        .logo {
+            height: 30px;
+            width: 100px;
+        }
+    }
+
     .bg-light {
         background-color: map-get($colores, "color-principal") !important;
     }
@@ -85,7 +92,7 @@ body {
     }
 
     .copyright {
-        font-size: 10px;
+        font-size:  map-get($letras, "letra-chica");
         padding-bottom: 10px;
         opacity: 30%;
         color: map-get($colores, "color-secundario");

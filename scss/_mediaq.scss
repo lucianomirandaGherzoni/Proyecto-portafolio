@@ -22,9 +22,12 @@
         @include flex (column, center, auto);
 
         .mifoto {
+            @include margen (10px, auto, auto, auto);
+
             img {
                 width: 350px;
                 height: 500px;
+                @include margen (10px, auto, auto, auto);
             }
         }
 
@@ -99,6 +102,7 @@
                 }
 
                 .mir {
+                    /* es aproposito que el apellido quede mas grande en la viste mobile, queda mas lindo esteticamente a mi gusto */
                     font-size: map-get($letras, "letra-titulo");
                     margin: 0;
                 }
