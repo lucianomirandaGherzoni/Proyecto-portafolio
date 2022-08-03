@@ -5,16 +5,15 @@
 @include mediaq('tablet') {
 
     /* header */
-    .nav-link {
+    .encabezado {
+
         font-size: map-get($letras, "letra-default");
-    }
-
-    .navbar-light {
-        .navbar-toggler {
-            color: map-get($colores, "color-secundario") !important;
-            opacity: 50%;
+        .navbar-light {
+            .navbar-toggler {
+                color: map-get($colores, "color-secundario") !important;
+                opacity: 50%;
+            }
         }
-
     }
 
     /* index */
@@ -58,18 +57,6 @@
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr)
     }
-
-    /*contactos*/
-
-    .projectos {
-        .img_study {
-            img {
-                height: 300px;
-                width: 500px;
-
-            }
-        }
-    }
 }
 
 /*mobile*/
@@ -79,7 +66,6 @@
     .nav-link {
         font-size: map-get($letras, "letra-default");
     }
-
 
     /*index*/
     .flexindex {
@@ -111,7 +97,6 @@
                     font-size: map-get($letras, "letra-default");
                     margin: 15px;
                 }
-
             }
         }
     }
@@ -130,7 +115,6 @@
             }
         }
     }
-
     /*aboutme*/
     .carousel-item {
         .w-100 {
@@ -163,25 +147,19 @@
     .img_study {
         margin: 0;
         padding: 0;
-
         img {
             height: 200px;
             width: $pantalla-completa  !important;
         }
     }
-
-
     /*footer*/
     .RedesSociales {
         a {
             list-style: none;
             text-decoration: none;
         }
-
         .pie__RedesSociales__item {
             margin: 10px;
         }
     }
-
-
 }

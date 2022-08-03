@@ -1,57 +1,85 @@
 @import './base/extends';
+
 /*body index*/
 .flexindex {
     @include flex (row, center, auto);
 
     .mifoto {
         @include margen (5vh, 0px, 0px, 0px);
+
+        img {
+            width: 33vh;
+            height: 45vh;
+            @include margen (30px, 20px, 20px, 20px);
+        }
     }
 
-    img {
+    /*     .mifoto {
         width: 33vh;
         height: 45vh;
+        position: absolute;
+        bottom: 20vh;
+        left: 0px;
+        @include margen (10vh, 0px, 0px, 20vh);
+        img {
+           height: 100%;
+           position: absolute;
+           bottom: 20vh;
+           transform: translate(-50%);
+           transition: bottom 3s, left 2s;
+            @include margen (30px, 20px, 20px, 20px);
+        }
+    }
+    .mifoto:hover .shape{
+        bottom: 10px;
+     } */
+    .mifoto:hover .shape {
+        bottom: 0;
+        position: absolute;
+        transform: translate(-50%);
+        transition: bottom 3s, left 2s;
         @include margen (30px, 20px, 20px, 20px);
     }
-}
 
-.atajoynombre {
-    @include margen (25vh, 0px, 0px,7vh);
+    .atajoynombre {
+        @include margen (25vh, 0px, 0px, 7vh);
 
-    .minombre {
-        p {
-            /*  */
-            font-size: map-get($letras, "letra-default");
-            font-style: oblique;
-            font-stretch: expanded;
-        }
+        .minombre {
+            p {
+                /*  */
+                font-size: map-get($letras, "letra-default");
+                font-style: oblique;
+                font-stretch: expanded;
+            }
 
-        h1 {
-            font-size: map-get($letras, "letra-titulo");
-        }
+            h1 {
+                font-size: map-get($letras, "letra-titulo");
+            }
 
-        .mir {
-            font-size: map-get($letras, "letra-titulo");
-            color: map-get($colores, "color-secundario");
-        }
-
-    }
-
-    .atajoProjectsAbout {
-        a {
-            color: map-get($colores, "color-secundario");
-            font-weight: 700;
-            text-decoration: none;
-            @include margen (10px, 10px, 10px, 10px);
-            font-size: map-get($letras, "letra-default");
-
-            &:hover {
-                background-color: map-get($colores, "color-principal");
-                opacity: 30%;
+            .mir {
+                font-size: map-get($letras, "letra-titulo");
+                color: map-get($colores, "color-secundario");
             }
 
         }
-    }
 
+        .atajoProjectsAbout {
+            a {
+                color: map-get($colores, "color-secundario");
+                font-weight: 700;
+                text-decoration: none;
+                @include margen (10px, 10px, 10px, 10px);
+                font-size: map-get($letras, "letra-default");
+
+                &:hover {
+                    background-color: map-get($colores, "color-principal");
+                    opacity: 30%;
+                }
+
+            }
+        }
+
+    }
 }
 
 
@@ -64,10 +92,14 @@
 
 .projectos {
     .projectos__items {
+
         img {
             height: 300px;
             width: 80%;
             @include margen (30px, 10px, 10px, 10px);
+            box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5);
+            border-radius: 6px;
+
         }
     }
 }
@@ -151,6 +183,7 @@
 
 .titulocolor {
     span {
+        letter-spacing: 5px;
         font-size: map-get($letras, "letra-subtitulo");
         animation: move 2s ease-in-out infinite;
     }

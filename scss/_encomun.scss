@@ -19,10 +19,6 @@ body {
     padding-bottom: 7rem;
     min-height: 100vh;
 
-    h2 {
-        @include margen (10px, 20px, 10px, 10px)
-    }
-
     p {
         font-weight: 700;
         margin: 20px;
@@ -59,11 +55,17 @@ body {
 
 }
 
+/* titulos */
+h1.titulos {
+    @include margen (10px, 20px, 10px, 10px);
+    font-size: map-get($letras, "letra-subtitulo");
+}
+
 /* rutas */
 .ruta {
     @include flex (row, space-between, center);
     margin: 30px;
-    font-size: 25px !important;
+    font-size: map-get($letras, "letra-default") !important;
 
     div {
         .bi {
@@ -92,7 +94,7 @@ body {
     }
 
     .copyright {
-        font-size:  map-get($letras, "letra-chica");
+        font-size: map-get($letras, "letra-chica");
         padding-bottom: 10px;
         opacity: 30%;
         color: map-get($colores, "color-secundario");
