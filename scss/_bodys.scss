@@ -3,14 +3,16 @@
 /*body index*/
 .flexindex {
     @include flex (row, center, auto);
-        img {
-            width: 600px;
-            height: 600px;
-            @include margen (50px, 20px, 20px, 20px);
-        }
+
+    img {
+        width: 600px;
+        height: 600px;
+        @include margen (0px, 20px, 20px, 20px);
+    }
 
     .atajoynombre {
-        @include margen (25vh, 0px, 0px, 0vh);
+        @include margen (20vh, 0px, 0px, 0px);
+        width: 50%;
 
         .minombre {
             p {
@@ -57,8 +59,6 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr)
 }
-
-.projectos {
     .projectos__items {
 
         img {
@@ -69,8 +69,7 @@
             border-radius: 6px;
 
         }
-    }
-}
+    } *
 
 /*body aboutme*/
 .miinfo {
@@ -151,35 +150,71 @@
 
 .titulocolor {
     span {
-        letter-spacing: 5px;
+        letter-spacing: 7px;
         font-size: map-get($letras, "letra-subtitulo");
-        font-weight: 800;
+        font-weight: 700;
         animation: move 3s ease-in-out infinite;
     }
 }
 
 @keyframes move {
     0% {
-        transform: translate(-100%, 0);
+        transform: translate(-500%, 0);
     }
 
     50% {
-        text-shadow: 0 50px 50px map-get($colores, "color-principal");
+        text-shadow: 0 50px 50px map-get($colores, "color-secundario");
     }
 
     100% {
-        transform: translate(100%, 0);
+        transform: translate(500%, 0);
     }
 }
 
-.introprojects {
-    font-size: map-get($letras, "letra-default")
-}
-
 .formulario {
-    @include margen (30px, 30px, 30px, 30px);
+    /*  background-color: rgba(0, 0, 0, 0.5); */
+    background-image: url(../imagenes/formulario2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 90%;
+    width: 450px;
+    margin: auto;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 1px;
 
-    label {
-        padding: 10px;
+    p.introform {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #eae0d5;
+        font-size: 22px;
+        font-weight: 700;
+        border-radius: 6px;
+    }
+
+    input,
+    textarea {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 7px;
+        box-sizing: border-box;
+        font-size: map-get($letras, "letra-default");
+        border: none;
+    }
+
+    textarea {
+        min-height: 100px;
+        max-height: 200px;
+        max-width: 100%;
+    }
+
+    /* #botonform{
+    background:map-get($colores, "color-primario");
+    color:map-get($colores, "color-letrablanca") ;
+} */
+    .botonform:hover {
+        cursor: pointer;
     }
 }

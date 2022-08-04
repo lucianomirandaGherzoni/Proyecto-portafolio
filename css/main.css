@@ -88,15 +88,16 @@ h1.titulos {
   .flexindex img {
     width: 600px;
     height: 600px;
-    margin-top: 50px;
+    margin-top: 0px;
     margin-bottom: 20px;
     margin-right: 20px;
     margin-left: 20px; }
   .flexindex .atajoynombre {
-    margin-top: 25vh;
+    margin-top: 20vh;
     margin-bottom: 0px;
     margin-right: 0px;
-    margin-left: 0vh; }
+    margin-left: 0px;
+    width: 50%; }
     .flexindex .atajoynombre .minombre p {
       /*  */
       font-size: 18px;
@@ -126,7 +127,7 @@ h1.titulos {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr); }
 
-.projectos .projectos__items img {
+.projectos__items img {
   height: 300px;
   width: 80%;
   margin-top: 30px;
@@ -136,7 +137,7 @@ h1.titulos {
   box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5);
   border-radius: 6px; }
 
-/*body aboutme*/
+*
 .miinfo {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -198,35 +199,64 @@ h1.titulos {
   line-height: 1.5; }
 
 .titulocolor span {
-  letter-spacing: 5px;
+  letter-spacing: 7px;
   font-size: 40px;
-  font-weight: 800;
+  font-weight: 700;
   animation: move 3s ease-in-out infinite; }
 
 @keyframes move {
   0% {
-    transform: translate(-100%, 0); }
+    transform: translate(-500%, 0); }
   50% {
-    text-shadow: 0 50px 50px #22333B; }
+    text-shadow: 0 50px 50px #5E503F; }
   100% {
-    transform: translate(100%, 0); } }
-
-.introprojects {
-  font-size: 18px; }
+    transform: translate(500%, 0); } }
 
 .formulario {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  margin-right: 30px;
-  margin-left: 30px; }
-  .formulario label {
-    padding: 10px; }
+  /*  background-color: rgba(0, 0, 0, 0.5); */
+  background-image: url(../imagenes/formulario2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 90%;
+  width: 450px;
+  margin: auto;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  margin-top: 20px;
+  border-radius: 6px;
+  border: 1px;
+  /* #botonform{
+    background:map-get($colores, "color-primario");
+    color:map-get($colores, "color-letrablanca") ;
+} */ }
+  .formulario p.introform {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #eae0d5;
+    font-size: 22px;
+    font-weight: 700;
+    border-radius: 6px; }
+  .formulario input,
+  .formulario textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 18px;
+    border: none; }
+  .formulario textarea {
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%; }
+  .formulario .botonform:hover {
+    cursor: pointer; }
 
 /* MEDIA QUERY */
 @media screen and (max-width: 768px) {
   /* header */
   .encabezado {
-    font-size: 18px; }
+    font-size: 18px;
+    width: 100; }
     .encabezado .navbar-light .navbar-toggler {
       color: #5E503F !important;
       opacity: 50%; }
@@ -242,7 +272,8 @@ h1.titulos {
       margin-right: auto;
       margin-left: 90px; }
     .flexindex .atajoynombre {
-      margin-top: 10px;
+      width: 100%;
+      margin-top: 0px;
       margin-bottom: auto;
       margin-right: auto;
       margin-left: auto; }
@@ -265,8 +296,10 @@ h1.titulos {
 /*mobile*/
 @media screen and (max-width: 480px) {
   /* header */
-  .nav-link {
-    font-size: 18px; }
+  .encabezado {
+    width: 100%; }
+    .encabezado .nav-link {
+      font-size: 18px; }
   /*index*/
   .flexindex {
     display: flex;
@@ -278,7 +311,8 @@ h1.titulos {
       height: 300px;
       margin: 0px; }
     .flexindex .atajoynombre {
-      margin: 10px; }
+      width: 100%;
+      margin: 0px; }
       .flexindex .atajoynombre .minombre h1 {
         font-size: 40px;
         margin: 0; }
@@ -298,7 +332,7 @@ h1.titulos {
     .projectos .projectos__items {
       width: 100%; }
       .projectos .projectos__items img {
-        height: 200px;
+        height: 400px;
         width: 100%;
         margin-top: 30px;
         margin-bottom: auto;
@@ -315,11 +349,11 @@ h1.titulos {
     margin-bottom: auto;
     margin-right: auto;
     margin-left: auto; }
-  .formulario form {
-    margin-top: 15px;
-    margin-bottom: 20px;
-    margin-right: auto;
-    margin-left: auto; }
+  .formulario {
+    width: 100%; }
+    .formulario p.introform {
+      font-size: 18px;
+      margin: 10px; }
   /*study*/
   .instituciones a {
     font-size: 18px; }
