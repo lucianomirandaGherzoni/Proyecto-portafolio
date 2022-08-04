@@ -59,17 +59,30 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr)
 }
-    .projectos__items {
 
-        img {
-            height: 300px;
-            width: 80%;
-            @include margen (30px, 10px, 10px, 10px);
-            box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5);
-            border-radius: 6px;
+.card {
+    margin: 30px!important;
+    padding: 20px!important;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5);
+    border-radius: 6px;
+    background-color:  map-get($colores, "color-principal"); 
+/*    background-image: url(../imagenes/fondo-cartas.png);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover; */
+p{
+    margin-bottom: 20%;
+   color: #eae0d5;
+}
 
-        }
-    } *
+    img {
+        height: 200px;
+        width: 100%;
+        align-items: center;
+    }
+}
+
+
 
 /*body aboutme*/
 .miinfo {
