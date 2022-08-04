@@ -8,6 +8,7 @@
     .encabezado {
 
         font-size: map-get($letras, "letra-default");
+
         .navbar-light {
             .navbar-toggler {
                 color: map-get($colores, "color-secundario") !important;
@@ -20,14 +21,8 @@
     .flexindex {
         @include flex (column, center, auto);
 
-        .mifoto {
-            @include margen (10px, auto, auto, auto);
-
-            img {
-                width: 350px;
-                height: 500px;
-                @include margen (10px, auto, auto, auto);
-            }
+        img {
+            @include margen (auto, auto, auto, 90px);
         }
 
         .atajoynombre {
@@ -71,15 +66,15 @@
     .flexindex {
         @include flex (column, center, auto);
 
-        .mifoto {
-            img {
-                width: 250px;
-                height: 300px;
-                @include margen (20px, 10px, auto, auto);
-            }
+        img {
+            width: 100%;
+            height: 300px;
+            margin: 0px;
         }
 
+
         .atajoynombre {
+            margin: 10px;
 
             .minombre {
                 h1 {
@@ -115,6 +110,7 @@
             }
         }
     }
+
     /*aboutme*/
     .carousel-item {
         .w-100 {
@@ -147,17 +143,20 @@
     .img_study {
         margin: 0;
         padding: 0;
+
         img {
             height: 200px;
             width: $pantalla-completa  !important;
         }
     }
+
     /*footer*/
     .RedesSociales {
         a {
             list-style: none;
             text-decoration: none;
         }
+
         .pie__RedesSociales__item {
             margin: 10px;
         }

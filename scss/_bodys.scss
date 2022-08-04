@@ -3,46 +3,14 @@
 /*body index*/
 .flexindex {
     @include flex (row, center, auto);
-
-    .mifoto {
-        @include margen (5vh, 0px, 0px, 0px);
-
         img {
-            width: 33vh;
-            height: 45vh;
-            @include margen (30px, 20px, 20px, 20px);
+            width: 600px;
+            height: 600px;
+            @include margen (50px, 20px, 20px, 20px);
         }
-    }
-
-    /*     .mifoto {
-        width: 33vh;
-        height: 45vh;
-        position: absolute;
-        bottom: 20vh;
-        left: 0px;
-        @include margen (10vh, 0px, 0px, 20vh);
-        img {
-           height: 100%;
-           position: absolute;
-           bottom: 20vh;
-           transform: translate(-50%);
-           transition: bottom 3s, left 2s;
-            @include margen (30px, 20px, 20px, 20px);
-        }
-    }
-    .mifoto:hover .shape{
-        bottom: 10px;
-     } */
-    .mifoto:hover .shape {
-        bottom: 0;
-        position: absolute;
-        transform: translate(-50%);
-        transition: bottom 3s, left 2s;
-        @include margen (30px, 20px, 20px, 20px);
-    }
 
     .atajoynombre {
-        @include margen (25vh, 0px, 0px, 7vh);
+        @include margen (25vh, 0px, 0px, 0vh);
 
         .minombre {
             p {
@@ -175,7 +143,7 @@
 /*body contact*/
 .titulocolor {
     span {
-        color: map-get($colores, "color-principal");
+        color: map-get($colores, "color-secundario");
         font-size: 0;
         line-height: 1.5;
     }
@@ -185,7 +153,8 @@
     span {
         letter-spacing: 5px;
         font-size: map-get($letras, "letra-subtitulo");
-        animation: move 2s ease-in-out infinite;
+        font-weight: 800;
+        animation: move 3s ease-in-out infinite;
     }
 }
 
@@ -195,7 +164,7 @@
     }
 
     50% {
-        text-shadow: 0 25px 50px map-get($colores, "color-secundario");
+        text-shadow: 0 50px 50px map-get($colores, "color-principal");
     }
 
     100% {
