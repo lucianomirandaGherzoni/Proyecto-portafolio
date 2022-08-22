@@ -1,38 +1,12 @@
 @import './base/extends';
 
 /*body index*/
-.flexindex {
+/* .flexindex {
     @include flex (row, center, auto);
-
-    img {
-        width: 600px;
-        height: 600px;
-        @include margen (0px, 20px, 20px, 20px);
-    }
 
     .atajoynombre {
         @include margen (20vh, 0px, 0px, 0px);
         width: 50%;
-
-        .minombre {
-            p {
-                /*  */
-                font-size: map-get($letras, "letra-default");
-                font-style: oblique;
-                font-stretch: expanded;
-            }
-
-            h1 {
-                font-size: map-get($letras, "letra-titulo");
-            }
-
-            .mir {
-                font-size: map-get($letras, "letra-titulo");
-                color: map-get($colores, "color-secundario");
-            }
-
-        }
-
         .atajoProjectsAbout {
             a {
                 color: map-get($colores, "color-secundario");
@@ -48,42 +22,73 @@
 
             }
         }
-
     }
+} 
+*/
+.index{
+    @include flex (column,center,center);
+    margin-top: 25vh;
+    h1{
+        font-size: 70px;
+    }
+    h4{
+        font-size: 20px;
+        font-style: italic;
+        color: map-get($colores, "color-marron");
+        font-weight: 900;
+    }
+    .atajoindex a{
+        text-decoration: none;
+        color: map-get($colores, "color-verde");
+        font-weight: 900;
+        margin: 20px;
+        &:hover{
+            background-color: map-get($colores, "color-verde");
+            color: #eae0d5;
+            border-radius: 5px;
+            opacity: 70%;
+        }
+    
+    }
+ 
 }
-
 
 /*body projects*/
-.projectos {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr)
-}
+.presentacion{
+height: 90vh;
 
-.card {
-    margin: 30px!important;
-    padding: 20px!important;
-    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5);
-    border-radius: 6px;
-    background-color:  map-get($colores, "color-principal"); 
-/*    background-image: url(../imagenes/fondo-cartas.png);
-   background-position: center;
-   background-repeat: no-repeat;
-   background-size: cover; */
-   
-p{
-    margin-bottom: 20%;
-   color: #eae0d5;
-}
-
-    img {
-        height: 200px;
-        width: 100%;
-        align-items: center;
+.cartasproyectos{
+    @include flex (row,center,center);
+    .card{
+        height: 30rem;
+        width: 25rem;
+        margin: 30px;
+        margin-top: 15vh;
+        background-color: rgba(0, 0, 0, 0.2);
+        a{
+            background-color:  map-get($colores, "color-verde");
+            border: 0px;
+            color: #eae0d5;
+        }
+        .card-title{
+            font-weight: 700;
+        }
     }
 }
-
-
+}
+.descripcion-proyectos{
+ article {
+     text-align: left;
+     margin: 30px;
+     h2{
+        font-weight: 700;
+        color: map-get($colores, "color-marron");
+     }
+     p{
+        font-size: 30px;
+     }
+ }
+}
 
 /*body aboutme*/
 .miinfo {
@@ -105,7 +110,7 @@ p{
 
 .atajoProjectscontact {
     a {
-        color: map-get($colores, "color-secundario");
+        color: map-get($colores, "color-verde");
         font-weight: 700;
         text-decoration: none;
         @include margen (10px, 10px, 10px, 10px);
@@ -224,10 +229,6 @@ p{
         max-width: 100%;
     }
 
-    /* #botonform{
-    background:map-get($colores, "color-primario");
-    color:map-get($colores, "color-letrablanca") ;
-} */
     .botonform:hover {
         cursor: pointer;
     }
