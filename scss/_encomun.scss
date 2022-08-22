@@ -16,7 +16,7 @@ body {
     background-size: cover;
     text-align: center;
     position: relative;
-    padding-bottom: 7rem;
+    padding-bottom: 10rem;
     min-height: 100vh;
 
     p {
@@ -61,21 +61,6 @@ h1.titulos {
     @include margen (10px, 20px, 10px, 10px);
     font-size: map-get($letras, "letra-subtitulo");
 }
-
-/* rutas */
-.ruta {
-    @include flex (row, space-between, center);
-    margin: 30px;
-    font-size: map-get($letras, "letra-default") !important;
-
-    div {
-        .bi {
-            color: map-get($colores, "color-secundario");
-
-        }
-    }
-}
-
 /* footer */
 .pie {
     background-color: map-get($colores, "color-principal");
