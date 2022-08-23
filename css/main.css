@@ -344,6 +344,8 @@ section.flexindex {
   .carousel-item .w-100 {
     width: 100% !important; }
   /*contactos*/
+  .mapa {
+    height: auto; }
   .mi_iframe iframe {
     width: 100%;
     height: 200px;
