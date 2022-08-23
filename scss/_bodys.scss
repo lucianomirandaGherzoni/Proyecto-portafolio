@@ -48,9 +48,9 @@ section.flexindex{
     }
 
 /*body projects*/
+
 .projectos {
     @include flex (row,center,center);
-    height: 90vh;
 }
 
 .card {

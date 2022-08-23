@@ -3,9 +3,10 @@
 
 /* MEDIA QUERY */
 @include mediaq('tablet') {
-    body{
-    padding-bottom: 15rem;
+    body {
+        padding-bottom: 15rem;
     }
+
     /* header */
     .encabezado {
 
@@ -18,31 +19,38 @@
             }
         }
     }
+
     /* contacto */
-    .mapa{
+    .mapa {
         height: 100vh;
         flex-direction: column;
         margin: 0;
-        p{
+
+        p {
             width: auto;
             margin: 20px;
         }
     }
+
     /*aboutme*/
     .w-100 {
         width: $pantalla-completa  !important;
     }
-/* estudios */
-.flex-estudios{
-flex-direction: column;
-p{
-    width: auto;
-    margin: 30px;
-}
-}
-    /*projectos*/
 
+    /* estudios */
+    .flex-estudios {
+        flex-direction: column;
+
+        p {
+            width: auto;
+            margin: 30px;
+        }
+    }
+
+    /*projectos*/
     .projectos {
+        height: auto;
+        margin: 20px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
@@ -69,9 +77,11 @@ p{
     /*index*/
     .flexindex {
         @include flex (column, center, auto);
+
         .atajoynombre {
             width: 100%;
             margin: 0px;
+
             a {
                 font-size: 20px;
                 text-decoration: auto;
@@ -83,6 +93,7 @@ p{
     .projectos {
         @include flex (column, center, center);
         height: auto;
+
         .card {
             width: 100%;
 
@@ -96,6 +107,10 @@ p{
                 }
             }
 
+            p {
+                width: auto;
+            }
+
         }
     }
 
@@ -107,10 +122,10 @@ p{
     }
 
     /*contactos*/
-    .mapa{
+    .mapa {
         height: auto;
     }
-  
+
     .mi_iframe {
         iframe {
             width: $pantalla-completa;
