@@ -3,12 +3,14 @@
 
 /* MEDIA QUERY */
 @include mediaq('tablet') {
-
+    body{
+    padding-bottom: 15rem;
+    }
     /* header */
     .encabezado {
 
         font-size: map-get($letras, "letra-default");
-        
+
         .navbar-light {
             .navbar-toggler {
                 color: map-get($colores, "color-secundario") !important;
@@ -16,47 +18,40 @@
             }
         }
     }
-
-    /* index */
-    .flexindex {
-        @include flex (column, center, auto);
-
-        img {
-            @include margen (auto, auto, auto, 90px);
-        }
-
-        .atajoynombre {
-            width: 100%;
-            @include margen (0px, auto, auto, auto);
-
-            .minombre {
-                p {
-                    font-size: map-get($letras, "letra-default");
-                }
-            }
+    /* contacto */
+    .mapa{
+        height: 100vh;
+        flex-direction: column;
+        margin: 0;
+        p{
+            width: auto;
+            margin: 20px;
         }
     }
-
-    .index {
-        @include margen (40px, auto, auto, auto);
-    }
-
     /*aboutme*/
     .w-100 {
         width: $pantalla-completa  !important;
     }
-
+/* estudios */
+.flex-estudios{
+flex-direction: column;
+p{
+    width: auto;
+    margin: 30px;
+}
+}
     /*projectos*/
 
     .projectos {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
-        .card{
-        width: auto;
+
+        .card {
+            width: auto;
         }
     }
-   
+
 }
 
 /*mobile*/
@@ -74,34 +69,12 @@
     /*index*/
     .flexindex {
         @include flex (column, center, auto);
-
-        img {
-            width: 100%;
-            height: 400px;
-            margin: 0px;
-        }
-
-
         .atajoynombre {
             width: 100%;
             margin: 0px;
-
-            .minombre {
-                h1 {
-                    font-size: map-get($letras, "letra-subtitulo");
-                    margin: 0;
-                }
-
-                .mir {
-                    /* es aproposito que el apellido quede mas grande en la viste mobile, queda mas lindo esteticamente a mi gusto */
-                    font-size: map-get($letras, "letra-titulo");
-                    margin: 0;
-                }
-
-                p {
-                    font-size: map-get($letras, "letra-default");
-                    margin: 15px;
-                }
+            a {
+                font-size: 20px;
+                text-decoration: auto;
             }
         }
     }
@@ -109,19 +82,21 @@
     /*projectos*/
     .projectos {
         @include flex (column, center, center);
-.card{
-    width: 100%;
-        .projectos__items {
-            width: $pantalla-completa;
+        height: auto;
+        .card {
+            width: 100%;
 
-            img {
-                height: 400px;
+            .projectos__items {
                 width: $pantalla-completa;
-                @include margen (30px, auto, auto, auto);
-            }
-        }
 
-    }
+                img {
+                    height: 400px;
+                    width: $pantalla-completa;
+                    @include margen (30px, auto, auto, auto);
+                }
+            }
+
+        }
     }
 
     /*aboutme*/
@@ -132,17 +107,19 @@
     }
 
     /*contactos*/
+  
     .mi_iframe {
         iframe {
             width: $pantalla-completa;
             height: 200px;
-            @include margen (30px, auto, auto, auto);
+            @include margen (10px, auto, auto, auto);
         }
     }
 
     .formulario {
         width: 100%;
-         p.introform {
+
+        p.introform {
             font-size: map-get($letras, "letra-default");
             margin: 10px;
         }

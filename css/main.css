@@ -12,7 +12,7 @@ body {
   background-size: cover;
   text-align: center;
   position: relative;
-  padding-bottom: 10rem;
+  padding-bottom: 12rem;
   min-height: 100vh; }
   body p {
     font-weight: 700;
@@ -76,23 +76,19 @@ section.flexindex {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 80vh; }
+  height: 100vh; }
 
 .atajoynombre {
   text-align: center;
-  margin-top: 15vh;
-  margin-bottom: 0px;
-  margin-right: 0px;
-  margin-left: 0px;
   width: 50%; }
   .atajoynombre .minombre p {
     font-size: 25px;
     font-style: oblique;
     font-stretch: expanded; }
   .atajoynombre .minombre h1 {
-    font-size: 70px; }
+    font-size: 60px; }
   .atajoynombre .minombre .mir {
-    font-size: 70px;
+    font-size: 60px;
     color: #5E503F; }
   .atajoynombre .atajoProjectsAbout a {
     color: #5E503F;
@@ -126,6 +122,8 @@ section.flexindex {
   background-color: #22333B; }
   .card p {
     margin-bottom: 20%;
+    color: #eae0d5; }
+  .card a {
     color: #eae0d5; }
   .card img {
     height: 350px;
@@ -184,7 +182,7 @@ section.flexindex {
   height: 90vh;
   margin: 30px; }
   .flexestudio p {
-    width: 900px; }
+    width: 600px; }
 
 .instituciones ol {
   list-style: none;
@@ -214,7 +212,7 @@ section.flexindex {
   .mapa p {
     font-size: 25px;
     font-weight: 700;
-    width: 900px; }
+    width: 600px; }
 
 .titulocolor span {
   color: #5E503F;
@@ -272,39 +270,31 @@ section.flexindex {
 
 /* MEDIA QUERY */
 @media screen and (max-width: 768px) {
+  body {
+    padding-bottom: 15rem; }
   /* header */
   .encabezado {
     font-size: 25px; }
     .encabezado .navbar-light .navbar-toggler {
       color: #5E503F !important;
       opacity: 50%; }
-  /* index */
-  .flexindex {
-    display: flex;
+  /* contacto */
+  .mapa {
+    height: 100vh;
     flex-direction: column;
-    justify-content: center;
-    align-items: auto; }
-    .flexindex img {
-      margin-top: auto;
-      margin-bottom: auto;
-      margin-right: auto;
-      margin-left: 90px; }
-    .flexindex .atajoynombre {
-      width: 100%;
-      margin-top: 0px;
-      margin-bottom: auto;
-      margin-right: auto;
-      margin-left: auto; }
-      .flexindex .atajoynombre .minombre p {
-        font-size: 25px; }
-  .index {
-    margin-top: 40px;
-    margin-bottom: auto;
-    margin-right: auto;
-    margin-left: auto; }
+    margin: 0; }
+    .mapa p {
+      width: auto;
+      margin: 20px; }
   /*aboutme*/
   .w-100 {
     width: 100% !important; }
+  /* estudios */
+  .flex-estudios {
+    flex-direction: column; }
+    .flex-estudios p {
+      width: auto;
+      margin: 30px; }
   /*projectos*/
   .projectos {
     display: grid;
@@ -326,29 +316,19 @@ section.flexindex {
     flex-direction: column;
     justify-content: center;
     align-items: auto; }
-    .flexindex img {
-      width: 100%;
-      height: 400px;
-      margin: 0px; }
     .flexindex .atajoynombre {
       width: 100%;
       margin: 0px; }
-      .flexindex .atajoynombre .minombre h1 {
-        font-size: 40px;
-        margin: 0; }
-      .flexindex .atajoynombre .minombre .mir {
-        /* es aproposito que el apellido quede mas grande en la viste mobile, queda mas lindo esteticamente a mi gusto */
-        font-size: 70px;
-        margin: 0; }
-      .flexindex .atajoynombre .minombre p {
-        font-size: 25px;
-        margin: 15px; }
+      .flexindex .atajoynombre a {
+        font-size: 20px;
+        text-decoration: auto; }
   /*projectos*/
   .projectos {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    height: auto; }
     .projectos .card {
       width: 100%; }
       .projectos .card .projectos__items {
@@ -367,7 +347,7 @@ section.flexindex {
   .mi_iframe iframe {
     width: 100%;
     height: 200px;
-    margin-top: 30px;
+    margin-top: 10px;
     margin-bottom: auto;
     margin-right: auto;
     margin-left: auto; }
