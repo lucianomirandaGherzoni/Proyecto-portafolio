@@ -97,7 +97,7 @@ a{
 
 .carousel-item {
     img {
-        height: 50vh;
+        height: 70vh;
         @include margen (20px, 20px, auto, auto);
     }
 
@@ -128,10 +128,10 @@ a{
 
 /*body study*/
 .flexestudio{
-    @include flex (column,center,center);
+    @include flex (row,center,center);
     margin: 30px;
     p{
-        width: 600px;
+        width:auto;
     }
 }
 .instituciones {
