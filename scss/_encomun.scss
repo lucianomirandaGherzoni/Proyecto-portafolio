@@ -51,7 +51,7 @@ body {
     }
 
     .navbar-light .navbar-nav .nav-link {
-        color: map-get($colores, "color-letrablanca");
+        color: #EAE0D5!important;
     }
 
 }
@@ -75,7 +75,8 @@ h1.titulos {
         padding: 20px;
 
         .bi {
-            color: map-get($colores, "color-letrablanca");
+            color:#EAE0D5;
+            font-size: 20px;
         }
 
     }
@@ -84,7 +85,7 @@ h1.titulos {
         font-size: map-get($letras, "letra-chica");
         padding-bottom: 10px;
         opacity: 30%;
-        color: map-get($colores, "color-letrablanca");
+        color: #EAE0D5;
         @include margen (10px, 10px, 0px, 0px)
     }
 }

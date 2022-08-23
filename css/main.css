@@ -32,7 +32,7 @@ body {
   .encabezado .bg-light {
     background-color: #22333B !important; }
   .encabezado .navbar-light .navbar-nav .nav-link {
-    color: #C6AC8F; }
+    color: #EAE0D5 !important; }
 
 /* titulos */
 h1.titulos {
@@ -40,7 +40,7 @@ h1.titulos {
   margin-bottom: 20px;
   margin-right: 10px;
   margin-left: 10px;
-  font-size: 40px; }
+  font-size: 30px; }
 
 /* footer */
 .pie {
@@ -57,12 +57,13 @@ h1.titulos {
     align-items: auto;
     padding: 20px; }
     .pie .RedesSociales .bi {
-      color: #C6AC8F; }
+      color: #EAE0D5;
+      font-size: 20px; }
   .pie .copyright {
-    font-size: 12px;
+    font-size: 16px;
     padding-bottom: 10px;
     opacity: 30%;
-    color: #C6AC8F;
+    color: #EAE0D5;
     margin-top: 10px;
     margin-bottom: 10px;
     margin-right: 0px;
@@ -77,19 +78,19 @@ section.flexindex {
 
 .atajoynombre {
   text-align: center;
-  margin-top: 20vh;
+  margin-top: 15vh;
   margin-bottom: 0px;
   margin-right: 0px;
   margin-left: 0px;
   width: 50%; }
   .atajoynombre .minombre p {
-    font-size: 18px;
+    font-size: 20px;
     font-style: oblique;
     font-stretch: expanded; }
   .atajoynombre .minombre h1 {
-    font-size: 75px; }
+    font-size: 70px; }
   .atajoynombre .minombre .mir {
-    font-size: 75px;
+    font-size: 70px;
     color: #5E503F; }
   .atajoynombre .atajoProjectsAbout a {
     color: #5E503F;
@@ -99,20 +100,24 @@ section.flexindex {
     margin-bottom: 10px;
     margin-right: 10px;
     margin-left: 10px;
-    font-size: 18px; }
+    font-size: 20px; }
     .atajoynombre .atajoProjectsAbout a:hover {
       background-color: #22333B;
-      opacity: 30%; }
+      color: #eae0d5;
+      border-radius: 5px;
+      opacity: 70%; }
 
 /*body projects*/
 .projectos {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  height: 90vh; }
 
 .card {
   margin: 30px !important;
+  margin-top: 0;
   padding: 20px !important;
   box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5);
   border-radius: 6px;
@@ -121,9 +126,17 @@ section.flexindex {
     margin-bottom: 20%;
     color: #eae0d5; }
   .card img {
-    height: auto;
+    height: 350px;
     width: 100%;
     align-items: center; }
+
+.descripcion-proyectos article {
+  margin: 30px;
+  text-align: left;
+  font-size: 30px; }
+  .descripcion-proyectos article h2 {
+    font-weight: 900;
+    color: #5E503F; }
 
 /*body aboutme*/
 .miinfo {
@@ -131,7 +144,7 @@ section.flexindex {
   margin-bottom: 10px;
   margin-right: 10px;
   margin-left: 10px;
-  font-size: 18px; }
+  font-size: 20px; }
 
 .carousel-item img {
   height: 50vh;
@@ -151,10 +164,12 @@ section.flexindex {
   margin-bottom: 10px;
   margin-right: 10px;
   margin-left: 10px;
-  font-size: 18px; }
+  font-size: 20px; }
   .atajoProjectscontact a:hover {
     background-color: #22333B;
-    opacity: 10%; }
+    color: #eae0d5;
+    border-radius: 5px;
+    opacity: 70%; }
 
 /*body study*/
 .img_study {
@@ -169,7 +184,7 @@ section.flexindex {
   padding: 0; }
   .instituciones ol a {
     margin: 20px;
-    font-size: 18px;
+    font-size: 20px;
     color: #5E503F; }
 
 .mi_iframe iframe {
@@ -188,7 +203,7 @@ section.flexindex {
 
 .titulocolor span {
   letter-spacing: 7px;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 700;
   animation: move 3s ease-in-out infinite; }
 
@@ -230,7 +245,7 @@ section.flexindex {
     margin-bottom: 20px;
     padding: 7px;
     box-sizing: border-box;
-    font-size: 18px;
+    font-size: 20px;
     border: none; }
   .formulario textarea {
     min-height: 100px;
@@ -243,7 +258,7 @@ section.flexindex {
 @media screen and (max-width: 768px) {
   /* header */
   .encabezado {
-    font-size: 18px; }
+    font-size: 20px; }
     .encabezado .navbar-light .navbar-toggler {
       color: #5E503F !important;
       opacity: 50%; }
@@ -265,7 +280,7 @@ section.flexindex {
       margin-right: auto;
       margin-left: auto; }
       .flexindex .atajoynombre .minombre p {
-        font-size: 18px; }
+        font-size: 20px; }
   .index {
     margin-top: 40px;
     margin-bottom: auto;
@@ -288,7 +303,7 @@ section.flexindex {
   .encabezado {
     width: 100%; }
     .encabezado .nav-link {
-      font-size: 18px; }
+      font-size: 20px; }
   /*index*/
   .flexindex {
     display: flex;
@@ -303,14 +318,14 @@ section.flexindex {
       width: 100%;
       margin: 0px; }
       .flexindex .atajoynombre .minombre h1 {
-        font-size: 40px;
+        font-size: 30px;
         margin: 0; }
       .flexindex .atajoynombre .minombre .mir {
         /* es aproposito que el apellido quede mas grande en la viste mobile, queda mas lindo esteticamente a mi gusto */
-        font-size: 75px;
+        font-size: 70px;
         margin: 0; }
       .flexindex .atajoynombre .minombre p {
-        font-size: 18px;
+        font-size: 20px;
         margin: 15px; }
   /*projectos*/
   .projectos {
@@ -343,11 +358,11 @@ section.flexindex {
   .formulario {
     width: 100%; }
     .formulario p.introform {
-      font-size: 18px;
+      font-size: 20px;
       margin: 10px; }
   /*study*/
   .instituciones a {
-    font-size: 18px; }
+    font-size: 20px; }
   .img_study {
     margin: 0;
     padding: 0; }
