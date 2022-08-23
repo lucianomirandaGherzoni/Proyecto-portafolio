@@ -3,6 +3,7 @@
 /*body index*/
 section.flexindex{
  @include flex (row,center,center);
+ height: 80vh;
 }
 
     .atajoynombre {
@@ -89,6 +90,7 @@ p{
 .miinfo {
     @include margen (10px, 10px, 10px, 10px);
     font-size: map-get($letras, "letra-default");
+
 }
 
 .carousel-item {
@@ -104,6 +106,7 @@ p{
 }
 
 .atajoProjectscontact {
+    margin: 30px;
     a {
         color: map-get($colores, "color-secundario");
         font-weight: 700;
@@ -122,16 +125,14 @@ p{
 }
 
 /*body study*/
-
-.img_study {
-    padding: 20px;
-
-    img {
-        height: 500px;
-        width: 700px;
+.flexestudio{
+    @include flex (row,center,center);
+    height: 90vh;
+    margin: 30px;
+    p{
+        width: 900px;
     }
 }
-
 .instituciones {
     ol {
         list-style: none;
@@ -149,13 +150,23 @@ p{
 
 .mi_iframe {
     iframe {
-        width: 700px;
+        width: 600px;
         height: 500px;
         @include margen (20px, auto, auto, auto);
     }
 }
 
 /*body contact*/
+.mapa{
+    margin: 30px;
+    height: 70vh;
+    @include flex (row,center,center);
+    p{
+        font-size: map-get($letras, "letra-default");
+        font-weight: 700;
+        width: 900px;
+    }
+}
 .titulocolor {
     span {
         color: map-get($colores, "color-secundario");
@@ -225,11 +236,6 @@ p{
         max-height: 200px;
         max-width: 100%;
     }
-
-    /* #botonform{
-    background:map-get($colores, "color-primario");
-    color:map-get($colores, "color-letrablanca") ;
-} */
     .botonform:hover {
         cursor: pointer;
     }
