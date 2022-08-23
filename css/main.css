@@ -175,10 +175,9 @@ section.flexindex {
 /*body study*/
 .flexestudio {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 90vh;
   margin: 30px; }
   .flexestudio p {
     width: 600px; }
@@ -289,18 +288,17 @@ section.flexindex {
   .w-100 {
     width: 100% !important; }
   /* estudios */
-  .flex-estudios {
+  .flexestudio {
     flex-direction: column; }
-    .flex-estudios p {
-      width: auto;
-      margin: 30px; }
   /*projectos*/
+  .presentacion {
+    margin-bottom: 0px; }
   .projectos {
     height: auto;
     margin: 20px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr); }
+    grid-template-rows: repeat(2, 1fr); }
     .projectos .card {
       width: auto; } }
 
@@ -362,6 +360,10 @@ section.flexindex {
       font-size: 25px;
       margin: 10px; }
   /*study*/
+  .flexestudio {
+    flex-direction: column; }
+  .introestudio p {
+    width: 300px; }
   .instituciones a {
     font-size: 25px; }
   .img_study {

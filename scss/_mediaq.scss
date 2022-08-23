@@ -38,22 +38,20 @@
     }
 
     /* estudios */
-    .flex-estudios {
+    .flexestudio{
         flex-direction: column;
-
-        p {
-            width: auto;
-            margin: 30px;
-        }
     }
 
     /*projectos*/
+    .presentacion{
+        margin-bottom: 0px;
+    }
     .projectos {
         height: auto;
         margin: 20px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
 
         .card {
             width: auto;
@@ -144,6 +142,14 @@
     }
 
     /*study*/
+    .flexestudio{
+        flex-direction: column;
+    }
+    .introestudio{
+        p{
+            width: 300px;
+        }
+    }
     .instituciones {
         a {
             font-size: map-get($letras, "letra-default");

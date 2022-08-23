@@ -128,8 +128,7 @@ a{
 
 /*body study*/
 .flexestudio{
-    @include flex (row,center,center);
-    height: 90vh;
+    @include flex (column,center,center);
     margin: 30px;
     p{
         width: 600px;
